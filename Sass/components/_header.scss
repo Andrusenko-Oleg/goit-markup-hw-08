@@ -1,0 +1,122 @@
+.page_heder{
+border: 1px solid #ECECEC;
+padding: 25px 0;
+}
+
+.header-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.header-box > nav{
+  display: flex;
+  align-items: center;
+    
+}
+
+.logo {
+  color: var(--title-text-color);
+  
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.logo-accent {
+  color: var(--accent);
+}
+.list-nav {
+  display: flex;
+  
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.list-nav >li {
+  margin-left: 50px;
+}
+
+.list-nav >li:first-child{
+  margin-left: 93px;
+}
+
+.list-nav .link{
+  padding: 32px 0;
+  /* min-width: 80px; */
+}
+
+.ause_nav_icon .link {
+  color: var(--primary-text-color); 
+}
+
+.link{
+  color: var(--title-text-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent);
+  outline: none;
+}
+
+.link-nav {
+  color: var(--accent);
+}
+
+.ause-nav {
+  display: flex;
+  
+} 
+.ause_nav_icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.ause_nav_icon >svg{
+  margin-right: 10px;
+}
+
+.ause-nav >li{
+  margin-right: 30px;
+}
+
+.ause-nav >li:last-child{
+  margin-right: 0;
+}
+
+.ause-nav a {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contact_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* color: currentColor; */
+}
+
+.ause_icon{
+  margin-right: 10px;
+  fill: currentColor;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.ause_nav_icon >a{
+  align-items: baseline;
+}
