@@ -10,11 +10,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.list {
-  list-style: none;
-}
-
-
 .title {
   color: var(--title-text-color);
 
@@ -30,5 +25,5 @@ body {
 }
 
 .section{
-  padding: 94px;
+  padding: 94px 0;
 }
