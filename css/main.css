@@ -216,6 +216,10 @@ body {
   align-items: baseline;
 }
 
+.ause-nav__link:hover, .ause-nav__link:focus {
+  color: var(--accent);
+}
+
 .ause-nav__icon {
   margin-right: 10px;
   fill: currentColor;
@@ -701,7 +705,17 @@ footer .footer-container {
   border-color: var(--accent);
 }
 
-::placeholder {
+.footer-input__text::placeholder {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input__text::placeholder {
   font-size: 16px;
   line-height: calc(20 / 16);
   padding-left: 10px;

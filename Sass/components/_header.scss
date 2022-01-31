@@ -92,8 +92,6 @@ padding: 25px 0;
 
 // -----------------------КОНТАКТЫ----------------------------------
 
-
-
 .ause-nav {
   display: flex;
   
@@ -121,6 +119,11 @@ padding: 25px 0;
 
     align-items: baseline;
   }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent);
+  }
   &__icon{
     margin-right: 10px;
     fill: currentColor;
@@ -128,4 +131,4 @@ padding: 25px 0;
     align-items: center;
     justify-content: center;
   }
-} 
+}
