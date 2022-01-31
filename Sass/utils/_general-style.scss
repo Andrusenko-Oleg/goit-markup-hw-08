@@ -24,7 +24,7 @@ body {
   padding: 0 15px;
 }
 
-.section{
+.section {
   padding: 94px 0;
 }
 
@@ -35,4 +35,10 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
