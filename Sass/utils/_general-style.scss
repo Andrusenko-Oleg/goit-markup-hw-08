@@ -3,7 +3,7 @@ body {
 
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
-  
+
   font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.9;
@@ -11,14 +11,12 @@ body {
 }
 
 .title {
-  
-
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.container{
+.container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -43,4 +41,18 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+.logo {
+  color: var(--title-text-color);
+
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  &__accent {
+    color: var(--accent);
+  }
 }

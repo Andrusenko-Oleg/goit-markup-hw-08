@@ -83,6 +83,19 @@ body {
   align-content: center;
 }
 
+.logo {
+  color: var(--title-text-color);
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.logo__accent {
+  color: var(--accent);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -216,7 +229,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 600px;
-  max-width: 1600px;
+  min-width: 1200px;
   padding: 200px 0;
 }
 
@@ -576,16 +589,43 @@ footer {
   padding: 60px 0;
 }
 
-.footer_container {
+footer .footer-container {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
 
-.logo-footer {
+.footer-navigation .logo {
+  color: var(--title-text-color);
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.footer-navigation .logo__accent {
+  color: var(--accent);
+}
+
+.footer-navigation .logo--footer {
   color: #ffffff;
   display: block;
   margin-bottom: 20px;
+}
+
+.footer-list {
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+}
+
+.footer-list__item {
+  display: block;
+}
+
+.footer-list__item:not(:first-child) {
+  margin-top: 9px;
 }
 
 .footer-main-link {
@@ -596,25 +636,11 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-list {
-  font-size: 14px;
-  line-height: 1.7;
-  font-style: normal;
-}
-
-.footer-list > li {
-  display: block;
-}
-
-.footer-list > li:not(:first-child) {
-  margin-top: 9px;
-}
-
-.ause_container {
+.footer-social {
   padding: 0 70px;
 }
 
-.ause_container_title {
+.footer-social__title {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
@@ -623,22 +649,22 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer_social_list {
+.footer-social-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer_social_item {
+.footer-social-list__item {
   width: 44px;
   height: 44px;
 }
 
-.footer_social_item:not(:last-child) {
+.footer-social-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer_social_link {
+.footer-social-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -649,12 +675,11 @@ footer {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer_social_link:hover,
-.footer_social_link:focus {
+.footer-social-list__link:hover, .footer-social-list__link:focus {
   background-color: var(--accent);
 }
 
-.footer_social_icon {
+.footer-social-list__icon {
   fill: #FFFFFF;
 }
 
