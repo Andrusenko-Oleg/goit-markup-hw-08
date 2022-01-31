@@ -154,19 +154,18 @@
 
     color: rgba(255, 255, 255, 0.6);
   }
-}
-
 
   &__text::placeholder {
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  padding-left: 10px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    padding-left: 10px;
 
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .sub_mail {
