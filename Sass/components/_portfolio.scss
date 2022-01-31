@@ -104,6 +104,25 @@
   }
 }
 
+.product-text-box{
+  padding: 20px 23px;
+  border: 1px solid #EEEEEE;
+
+  &__title {
+    color: #212121;
+  }
+}
+
+
+// font-weight: bold;
+// font-size: 18px;
+// line-height: 36px;
+// /* identical to box height, or 200% */
+
+// letter-spacing: 0.06em;
+
+// 
+
 .cards-text {
   color: var(--primary-text-color);
 }

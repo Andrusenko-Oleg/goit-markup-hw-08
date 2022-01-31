@@ -572,6 +572,15 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.product-text-box {
+  padding: 20px 23px;
+  border: 1px solid #EEEEEE;
+}
+
+.product-text-box__title {
+  color: #212121;
+}
+
 .cards-text {
   color: var(--primary-text-color);
 }
