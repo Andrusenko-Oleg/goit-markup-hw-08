@@ -130,7 +130,6 @@ img {
 .page_heder {
   border-bottom: 1px solid #ECECEC;
   padding: 25px 0;
-  position: relative;
 }
 
 .header-box {
@@ -268,30 +267,75 @@ img {
 }
 
 .mob-menu {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #FFFFFF;
   width: 100vw;
   height: 100vh;
+  padding: 48px 40px;
 }
 
 .mob-menu__cloze {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 21px;
+  right: 25px;
   width: 30px;
   height: 30px;
   background-color: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: none;
+  display: block;
+  margin-left: auto;
   outline: none;
 }
 
 .mob-menu .modal_svg:focus,
 .mob-menu .modal_svg:hover {
   fill: var(--accent);
+}
+
+.mob-menu__item {
+  margin-bottom: 33px;
+}
+
+.mob-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(42 /40);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.mob-menu__link:hover, .mob-menu__link:focus {
+  clear: var(--accent);
+}
+
+.mob-contacts__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-contacts__link--acent {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+
+.mob-social {
+  display: flex;
+}
+
+.mob-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1,22;
+  letter-spacing: 0.02em;
+  color: var(--accent);
 }
 
 .hero-section {
