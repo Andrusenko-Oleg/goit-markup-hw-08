@@ -59,13 +59,19 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .section, .team-section {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+
+@media (max-witgh: 480px) {
+  .section, .team-section {
+    padding: 60px 0;
+  }
 }
 
 .title-box, .work__title, .team__title, .clients__title {
@@ -266,15 +272,6 @@ body {
   cursor: pointer;
 }
 
-.advantage-list {
-  display: flex;
-}
-
-.advantage-list__item {
-  margin-right: 30px;
-  width: 270px;
-}
-
 .advantage-list__item:last-child {
   margin-right: 0;
 }
@@ -282,7 +279,6 @@ body {
 .advantage-list__item::before {
   content: "";
   display: block;
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #F5F4FA;
@@ -309,6 +305,7 @@ body {
 
 .advantage-list__title {
   margin-bottom: 10px;
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -365,13 +362,14 @@ body {
   background-color: var(--second-background-color);
 }
 
-.team-list {
-  display: flex;
-  justify-content: center;
+.team__title {
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 .team-list__item {
-  margin-right: 28px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -379,6 +377,10 @@ body {
 
 .team-list__item:last-child {
   margin-right: 0;
+}
+
+.team-list__img {
+  margin: 0 auto;
 }
 
 .personal-information {
@@ -443,17 +445,22 @@ body {
   fill: var(--primary-background-color);
 }
 
+.clients__title {
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .clients-list__item {
-  width: calc((100% - 30px) /6);
+  width: calc((100% - 30px) /2);
   height: 92px;
-}
-
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .clients-list__link {

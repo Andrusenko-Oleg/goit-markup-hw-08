@@ -1,20 +1,27 @@
 .clients {
   &__title {
       @extend .title-box;
+      font-size: 28px;
+      line-height: calc(33 / 28);
+      
+      text-align: center;
+      letter-spacing: 0.03em;
     }
 }
 
 .clients-list{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   &__item {
-    width: calc((100% - 30px) /6);
+    width: calc((100% - 30px) /2);
     height: 92px;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
   &__link{
     border: 1px solid #AFB1B8;
