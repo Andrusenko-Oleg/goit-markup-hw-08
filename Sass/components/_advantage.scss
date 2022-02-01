@@ -1,19 +1,32 @@
 .advantage-list {
-  // display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   &__item {
     // margin-right: 30px;
-    // width: 270px;
+    @media screen and (min-width: 767px) {
+    width: 354px;
+    }
+    
     margin-bottom: 30px;
-  }
+    // width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+      }
   &__item:last-child {
     margin-right: 0;
     margin-bottom: 0;
   }
+
+  &__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
   &__item::before {
   content: "";
   display: block;
-  // width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
 
