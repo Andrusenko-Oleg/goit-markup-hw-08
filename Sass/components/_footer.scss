@@ -1,11 +1,13 @@
   footer {
   background-color: var(--third-background-color);
   padding: 60px 0;
+  
 
   .footer-container{
-    display: flex;
-    align-items:baseline;
-    justify-content: space-between;
+    // display: flex;
+    // align-items:baseline;
+    // justify-content: space-between;
+    text-align: center;
   }
 
 }
@@ -17,6 +19,8 @@
 // }
 
 .footer-navigation {
+  
+  margin-bottom: 60px;
 
   .logo {
   color: var(--title-text-color);
@@ -69,6 +73,7 @@
 
 .footer-social {
   padding: 0;
+  margin-bottom: 60px;
 
   &__title{
     font-size: 14px;

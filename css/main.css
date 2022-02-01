@@ -64,14 +64,20 @@ body {
   padding: 0 15px;
 }
 
-.section, .team-section {
-  padding: 60px 0;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 
-@media (max-witgh: 480px) {
-  .section, .team-section {
-    padding: 60px 0;
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
+}
+
+.section, .team-section {
+  padding: 60px 0;
 }
 
 .title-box, .work__title, .team__title, .clients__title {
@@ -100,6 +106,12 @@ body {
 
 .logo__accent {
   color: var(--accent);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -599,9 +611,11 @@ footer {
 }
 
 footer .footer-container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-navigation {
+  margin-bottom: 60px;
 }
 
 .footer-navigation .logo {
@@ -647,6 +661,7 @@ footer .footer-container {
 
 .footer-social {
   padding: 0;
+  margin-bottom: 60px;
 }
 
 .footer-social__title {

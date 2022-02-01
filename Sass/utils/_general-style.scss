@@ -20,17 +20,17 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .section {
   // padding: 94px 0;
   padding: 60px 0;
-}
-
-@media (max-witgh: 480px) {
-  .section {
-    padding: 60px 0;
-  }
 }
 
 .title-box {
@@ -62,4 +62,10 @@ body {
   &__accent {
     color: var(--accent);
   }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
