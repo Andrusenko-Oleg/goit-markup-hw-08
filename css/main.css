@@ -801,7 +801,7 @@ footer .footer-container {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   background: #FFFFFF;
   border-radius: 4px;
@@ -873,8 +873,8 @@ footer .footer-container {
 }
 
 .coment_text {
-  width: 448px;
-  height: 120px;
+  width: 370px;
+  height: 130px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -916,8 +916,8 @@ footer .footer-container {
 }
 
 .input_check_text {
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
@@ -965,8 +965,8 @@ footer .footer-container {
 }
 
 .input_check_linc {
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent);
