@@ -46,7 +46,7 @@
   }
   
   
-  // color: var(--title-text-color);
+  color: var(--title-text-color);
 
   font-weight: 500;
   font-size: 14px;
@@ -63,7 +63,7 @@
 
   &__link{
     color: var(--title-text-color);
-    padding: 32px 0;
+    // padding: 32px 0;
 
     position: relative;
 
@@ -200,7 +200,7 @@
   }
   &__link:hover,
   &__link:focus {
-    clear: var(--accent);
+    color: var(--accent);
   }
 }
 
