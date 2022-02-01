@@ -1,12 +1,14 @@
 .advantage-list {
   // display: flex;
 
-  // &__item {
-  //   margin-right: 30px;
-  //   width: 270px;
-  // }
+  &__item {
+    // margin-right: 30px;
+    // width: 270px;
+    margin-bottom: 30px;
+  }
   &__item:last-child {
     margin-right: 0;
+    margin-bottom: 0;
   }
   &__item::before {
   content: "";
