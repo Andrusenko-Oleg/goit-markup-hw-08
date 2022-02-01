@@ -238,9 +238,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 600px;
-  min-width: 1200px;
-  padding: 200px 0;
+  padding: 118px 0;
 }
 
 .hero {
@@ -250,14 +248,15 @@ body {
 .hero__title {
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: calc(42 / 26);
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero__button {
-  margin-top: 30px;
+  margin-top: 40px;
   background-color: var(--accent);
   color: #ffffff;
   font-weight: 700;
