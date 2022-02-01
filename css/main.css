@@ -277,14 +277,15 @@ img {
 }
 
 .mob-menu__cloze {
+  display: flex;
+  align-items: center;
+  position: absolute;
   top: 21px;
   right: 25px;
   width: 30px;
   height: 30px;
   background-color: #FFFFFF;
   border: none;
-  display: block;
-  margin-left: auto;
   outline: none;
 }
 
@@ -294,7 +295,7 @@ img {
 }
 
 .mob-menu__item {
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 }
 
 .mob-menu__link {
@@ -308,6 +309,17 @@ img {
 
 .mob-menu__link:hover, .mob-menu__link:focus {
   clear: var(--accent);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.mob-contacts__item {
+  margin-bottom: 30px;
 }
 
 .mob-contacts__link {
@@ -324,6 +336,7 @@ img {
   line-height: 40px;
   letter-spacing: 0.02em;
   color: var(--accent);
+  margin-bottom: 30px;
 }
 
 .mob-social {
@@ -336,6 +349,11 @@ img {
   line-height: 1,22;
   letter-spacing: 0.02em;
   color: var(--accent);
+  padding: 0 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  border-top: none;
+  border-bottom: none;
 }
 
 .hero-section {
