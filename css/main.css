@@ -130,6 +130,7 @@ img {
 .page_heder {
   border-bottom: 1px solid #ECECEC;
   padding: 25px 0;
+  position: relative;
 }
 
 .header-box {
@@ -141,6 +142,15 @@ img {
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navigation__btn {
+  background-color: transparent;
+  border: none;
+  display: block;
+  text-align: center;
 }
 
 .logo {
@@ -162,6 +172,12 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
 }
 
 .nav-list__item {
@@ -211,6 +227,12 @@ img {
   display: flex;
 }
 
+@media screen and (max-width: 767px) {
+  .ause-nav {
+    display: none;
+  }
+}
+
 .ause-nav__item {
   display: flex;
   justify-content: center;
@@ -243,6 +265,33 @@ img {
   fill: currentColor;
   align-items: center;
   justify-content: center;
+}
+
+.mob-menu {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mob-menu__cloze {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.mob-menu .modal_svg:focus,
+.mob-menu .modal_svg:hover {
+  fill: var(--accent);
 }
 
 .hero-section {

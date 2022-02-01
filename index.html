@@ -15,7 +15,7 @@
 <body>
 
     <!-- Хедер -->
-    <!-- <header class="page_heder">
+    <header class="page_heder">
         
         <div class="header-box container">
             
@@ -33,9 +33,16 @@
                         <a href="#" class="nav-list__link">Контакты</a>
                     </li>
                 </ul>
-            </nav> -->
+
+                <button type="button" class="navigation__btn">
+                    <svg  width="24" height="16">
+                        <use href="./images/icon/symbol-defs.svg#menu-mob"></use>
+                    </svg>
+                </button>
+
+            </nav>
             <!-- контанты -->
-            <!-- <ul class="ause-nav">
+            <ul class="ause-nav">
                 <li class="ause-nav__item">
                     <a href="mailto:info@devstudio.com" class="ause-nav__link">
                         <svg class="ause-nav__icon" width="16" height="12">
@@ -54,7 +61,52 @@
                 </li>
             </ul>
         </div>
-    </header> -->
+<!--------------------------Млбильное меню----------------------------------------------->
+        <div class="mob-menu">
+            <button type="button" class="mob-menu__cloze" data-modal-close>
+                <svg class="modal_svg" width="11" height="11">
+                    <use href="images/icon/symbol-defs.svg#Exit"></use>
+                </svg>
+            </button>
+            <nav>
+                <ul class="mob-menu__list">
+                    <li class="mob-menu__item">
+                        <a href="./index.html" class="nav-list__link link-akcent ">Студия</a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a href="#">Портфолио</a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mob-contacts">
+                    <li class="mob-contacts__item">
+                        <a href="" class="mob-contacts_link">
+                    </a>
+                    </li>
+                    <li class="mob-contacts__item">
+                        <a href="" class="mob-contacts_link">
+                    </a>
+                    </li>
+                </ul>
+                <ul class="mob-social">
+                    <li class="mob-social__item">
+                        <a href="" class="mob-social__link">Instagram</a>
+                    </li>
+                    <li class="mob-social__item">
+                        <a href="" class="mob-social__link">Twitter</a>
+                    </li>
+                    <li class="mob-social__item">
+                        <a href="" class="mob-social__link">Facebook</a>
+                    </li>
+                    <li class="mob-social__item">
+                        <a href="" class="mob-social__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
   <!-- Основной контент -->
     <main>
         <!-- Герой -->
